@@ -1,3 +1,22 @@
+document.querySelector('.resume-buttons').addEventListener('click', function(e) {
+    e.preventDefault();
+    const msg = document.getElementById('resumeMessage');
+    
+    // Set message text
+    msg.textContent = "Resume is not added";
+    msg.style.display = "block";
+    msg.style.opacity = 1;
+
+    // Hide message after 10 seconds
+    setTimeout(() => {
+        msg.style.opacity = 0;
+        setTimeout(() => {
+            msg.style.display = "none";
+        }, 400); // wait for fade out to complete
+    }, 10000); // 10 seconds
+});
+
+
 // Mobile Navigation Toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');

@@ -22,6 +22,15 @@ body {
     padding: 0 20px;
 }
 
+.hidden-message {
+    margin-top: 10px;
+    color: #eff9f3; /* orange-ish warning color */
+    font-size: 0.95rem;
+    display: none;
+    transition: opacity 0.4s ease;
+}
+
+
 /* Color Variables */
 :root {
     --primary-color: #2c3e50;
@@ -527,6 +536,9 @@ body {
     z-index: 1;
 }
 
+.contact-item a { 
+    text-decoration: none;
+ }
 .contact-item {
     display: flex;
     flex-direction: column;
@@ -560,6 +572,7 @@ body {
     margin-bottom: 1.5rem;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .contact-icon::before {
